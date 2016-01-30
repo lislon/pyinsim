@@ -50,7 +50,7 @@ _PACKET_MAP = {insim_.ISP_ISI: insim_.IS_ISI, insim_.ISP_VER: insim_.IS_VER, ins
                insim_.IRP_SEL: insim_.IR_SEL, insim_.IRP_ERR: insim_.IR_ERR, insim_.IRP_ARQ: insim_.IR_ARQ,
                insim_.IRP_ARP: insim_.IR_ARP, insim_.ISP_CON: insim_.IS_CON, insim_.ISP_ACR: insim_.IS_ACR,
                insim_.ISP_PLC: insim_.IS_PLC, insim_.ISP_HLV: insim_.IS_HLV, insim_.ISP_OBH: insim_.IS_OBH,
-               insim_.ISP_AXM: insim_.IS_AXM}
+               insim_.ISP_AXM: insim_.IS_AXM, insim_.ISP_NCI: insim_.IS_NCI}
 
 # Event constants.
 EVT_INIT = 256
@@ -551,5 +551,3 @@ class _OutSim(_Binding):
 if __name__ == '__main__':
     pass
     #print [d for d in dir() if not d.startswith('_') and d not in ('asyncore', 'insim_', 'socket', 'traceback', 'threading')]
-    
-            
